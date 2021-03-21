@@ -112,49 +112,49 @@ export class AppComponent implements OnInit {
     if (icono.includes("d")) {
       switch (icono.replace("d", "")) {
         case "01":
-          return "../assets/solDia.png";
+          return "assets/solDia.png";
         case "02":
-          return "../assets/fewCloudsDay.png";
+          return "assets/fewCloudsDay.png";
         case "03":
-          return "../assets/scatteredCloudsDia.png";
+          return "assets/scatteredCloudsDia.png";
         case "04":
-          return "../assets/brokenCloudsdia.png";
+          return "assets/brokenCloudsdia.png";
         case "09":
-          return "../assets/showerRainDay.png";
+          return "assets/showerRainDay.png";
         case "10":
-          return "../assets/rainDia.png";
+          return "assets/rainDia.png";
         case "11":
-          return "../assets/thunderDia.png";
+          return "assets/thunderDia.png";
         case "13":
-          return "../assets/snowDay.png";
+          return "assets/snowDay.png";
         case "50":
-          return "../assets/mistDay.png";
+          return "assets/mistDay.png";
         default:
-          return "../assets/solDia.png";
+          return "assets/solDia.png";
       }
     }
     else {
       switch (icono.replace("n", "")) {
         case "01":
-          return "../assets/solNoche.png";
+          return "assets/solNoche.png";
         case "02":
-          return "../assets/fewCloudsNoche.png";
+          return "assets/fewCloudsNoche.png";
         case "03":
-          return "../assets/scatteredCloudsNoche.png";
+          return "assets/scatteredCloudsNoche.png";
         case "04":
-          return "../assets/brokenCloudsNoche.png";
+          return "assets/brokenCloudsNoche.png";
         case "09":
-          return "../assets/showerRainNoche.png";
+          return "assets/showerRainNoche.png";
         case "10":
-          return "../assets/rainNoche.png";
+          return "assets/rainNoche.png";
         case "11":
-          return "../assets/thunderNoche.png";
+          return "assets/thunderNoche.png";
         case "13":
-          return "../assets/snowNigth.png";
+          return "assets/snowNigth.png";
         case "50":
-          return "../assets/mistNigth.png";
+          return "assets/mistNigth.png";
         default:
-          return "../assets/solNoche.png";
+          return "assets/solNoche.png";
       }
     }
 
