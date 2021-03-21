@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Yesteryear');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+/*Dia semana*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+/*Actual: */
+@import url('https://fonts.googleapis.com/css2?family=Charm&display=swap');
+/*Temperatura Actual*/
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+
+.actual{
+    font-family: 'Charm', cursive;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.flex {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto
+}
+
+.padding {
+    padding: 5%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.grid-margin,
+.purchace-popup>div {
+    margin-bottom: 25px
+}
+
+.card {
+    border: 0;
+    box-shadow: 5px 5px 20px rgb(0 0 0 / 45%);
+}
+
+.img{
+    height: 30px;
+    margin-right: 10%;
+    margin-bottom: 3%;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border-radius: 15px;
+    width: 60%;
+}
+
+.card .card-body {
+    padding: 1.88rem 1.81rem
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 1.25rem;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card-weather .weather-date-location {
+    padding: 0 0 10px
+}
+
+.h3,
+h3 {
+    font-size: 1.56rem;
+    font-family: "yesteryear", cursive;
+}
+
+  .name{
+	font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+  }
+
+.h1,
+.h2,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h4,
+h5,
+h6 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500
+}
+
+.text-gray,
+.card-subtitle,
+.new-accounts ul.chats li.chat-persons a p.joined-date {
+    color: #303030;
+    font-weight: bold;
+}
+
+p {
+    font-size: 13px
+}
+
+.text-gray,
+.card-subtitle,
+.new-accounts ul.chats li.chat-persons a p.joined-date {
+    color: #303030;
+    font-weight: bold;
+}
+
+.card-weather .weather-data {
+    padding: 0 0 2%
+}
+
+.mr-auto,
+.mx-auto {
+    margin-right: auto !important
+}
+
+.extraData{
+    font-family: 'Redressed', cursive;
+    font-size: 1.2em;
+}
+
+.display-3 {
+    font-size: 2.5rem;
+    font-family: 'Redressed', cursive;
+}
+
+
+.card-weather .weakly-weather {
+    background: #0000002e;
+    overflow-x: auto;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.card-weather .weakly-weather .weakly-weather-item {
+    flex: 0 0 25%;
+    border-right: 1px solid #0000002e;
+    padding: 1rem;
+    text-align: center
+}
+
+.mb-0,
+.my-0 {
+    margin-bottom: 0 !important
+}
+
+.card-weather .weakly-weather .weakly-weather-item i {
+    font-size: 1.2rem
+}
+
+/*Tooltip*/
+
+abbr[data-title] {
+    position: relative;
+    text-decoration: underline dotted; 
+    cursor: pointer;
+  }
+  abbr[data-title]:hover::after,
+  abbr[data-title]:focus::after {
+    content: attr(data-title);
+    position: absolute;
+    left: 50%;
+    top: -30px;
+    transform: translateX(-50%);
+    width: auto;
+    white-space: nowrap;
+    background: rgb(91, 52, 120);
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px 0 rgba(27, 27, 95, 1);
+    font-size: 14px;
+    padding: 3px 5px;
+  }

@@ -1,0 +1,109 @@
+<div class="page-content page-container" id="page-content">
+  <div class="padding">
+    <div class="container-fluid d-flex justify-content-center">
+      <!--weather card-->
+      <div class="card card-weather">
+        <div class="card-body" [ngStyle]="valor">
+          <div class="weather-date-location">
+            <h3 class="name">{{ hoy.fecha.fechaName }}</h3>
+            <p class="text-gray">
+              <span class="weather-date actual">{{ hoy.fecha.fechas }} -</span>
+              <span class="weather-location actual">
+                {{ hoy.place.cuidad }}, {{ hoy.place.pais }}</span
+              >
+            </p>
+          </div>
+          <div class="weather-data d-flex">
+            <div class="mr-auto">
+              <span class="actual">T° Actual</span>
+              <h4 class="display-3">
+                {{ hoy.main.temp }} <span class="symbol">°</span>C
+              </h4>
+              <p  class="actual" style="font-weight: bold">
+                <img
+                  src="{{ hoy.weather.icono }}"
+                  alt="icono"
+                  style="width: 40px"
+                />
+                {{ hoy.weather.description }}
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <span class="ml-2">
+                <abbr data-title="Temp min">
+              <img
+                src="../../assets/min.png"
+                alt="gota"
+                class="img"
+              />
+              </abbr>
+              </span>
+              <span class="extraData">{{ hoy.main.temp_min }} °C</span>
+            </div>
+            <div class="col-sm-6">
+              <span class="ml-2">
+                <abbr data-title="Humedad">
+            <img
+                src="../../assets/gota.png"
+                alt="gota"
+                class="img"
+                style="padding-left: 4%;"
+              />
+            </abbr>
+          </span>
+              <span class="extraData">{{ hoy.main.humidity }} %</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6" >
+              <span class="ml-2">
+                <abbr data-title="Temp Max">
+                <img
+                src="../../assets/max.png"
+                alt="gota"
+                class="img"
+              />
+            </abbr>
+          </span>
+              <span class="extraData">{{ hoy.main.temp_max }} °C</span>
+              
+            </div>
+            <div class="col-sm-6" style="padding-left: 3%;">
+              <span class="ml-2">
+                <abbr data-title="Viento">
+              <img
+              src="../../assets/wind.png"
+              alt="wind"
+              style="height: 35px; margin-right: 5%; margin-bottom: 3%;"
+            />
+          </abbr>
+        </span>
+            <span class="extraData">{{ hoy.wind }} m/s</span>
+            </div>
+          </div>
+        </div>
+        <div class="card-body p-0">
+          <div class="d-flex weakly-weather">
+            <div
+              class="weakly-weather-item"
+              *ngFor="let data of listaTemp; let i = index"
+            >
+              <p class="mb-0 name" style="font-size: 1.2em;">{{ data.fecha.fechaName }}</p>
+              <i class="mdi mdi-weather-cloudy"></i>
+              <img
+                src="{{ data.weather.icono }}"
+                alt="icono"
+                style="width: 40px"
+              />
+              <p class="mb-0 extraData">{{ data.main.temp_max }}°C</p>
+              <p class="extraData">{{ data.weather.description }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--weather card ends-->
+    </div>
+  </div>
+</div>

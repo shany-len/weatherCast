@@ -1,0 +1,66 @@
+<h2><i>Weather App - Angular</i></h2>
+<div *ngIf="showAlert">
+  <div class="alert alert-danger">
+    <a class="close" (click)="close()">×</a><span>{{ textoError }}</span>
+  </div>
+</div>
+<div class="card mt-5">
+  <div class="card-header">
+    <label class="select" for="region">
+      <select
+        id="region"
+        required="required"
+        class="form-control"
+        #t
+        (change)="callType(t.value)"
+      >
+        <option [value]="" selected disabled>--Seleccione región--</option>
+        <option *ngFor="let datos of listaRegion" [value]="datos.value">
+          {{ datos.name }}
+        </option>
+      </select>
+      <svg>
+        <use xlink:href="#select-arrow-down"></use>
+      </svg>
+    </label>
+  </div>
+  <div *ngIf="mostrarPaises" class="card-body">
+    <label class="select" for="slct">
+      <select id="slct" required class="form-control" #pais>
+        <option selected value="" disabled>--Seleccione país--</option>
+        <option *ngFor="let elem of listaCountries" [value]="elem.code">
+          {{ elem.name }}
+        </option>
+      </select>
+      <svg>
+        <use xlink:href="#select-arrow-down"></use>
+      </svg>
+    </label>
+    <div class="form__group field">
+      <input
+        type="input"
+        class="form__field"
+        placeholder="Ciudad"
+        name="ciudad"
+        id="ciudad"
+        #ciudad
+        required
+      />
+      <label for="ciudad" class="form__label">Ciudad</label>
+    </div>
+    <button class="fill" (click)="click(pais.value, ciudad.value)">
+      Buscar
+    </button>
+  </div>
+  <svg class="sprites">
+    <symbol id="select-arrow-down" viewbox="0 0 10 6">
+      <polyline points="1 1 5 5 9 1"></polyline>
+    </symbol>
+  </svg>
+</div>
+
+<div *ngIf="mostrarClima">
+  
+  <app-clima [listaTemp]=listaTemp [hoy]=hoy></app-clima>
+</div>
+<router-outlet></router-outlet>
