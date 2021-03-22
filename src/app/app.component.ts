@@ -185,7 +185,7 @@ export class AppComponent implements OnInit {
             weather: {
               main: listita[i].weather[0].main,
               description: listita[i].weather[0].description,
-              icono: "http://openweathermap.org/img/wn/" + listita[i].weather[0].icon + "@2x.png",
+              icono: "https://openweathermap.org/img/wn/" + listita[i].weather[0].icon + "@2x.png",
               img: imagen
             },
             clouds: listita[i].clouds.all,
@@ -249,7 +249,7 @@ export class AppComponent implements OnInit {
           weather: {
             main: listaCountry.weather[0].main,
             description: listaCountry.weather[0].description,
-            icono: "http://openweathermap.org/img/wn/" + listaCountry.weather[0].icon + "@2x.png",
+            icono: "https://openweathermap.org/img/wn/" + listaCountry.weather[0].icon + "@2x.png",
             img: imagen
           },
           clouds: listaCountry.clouds.all,
