@@ -162,7 +162,7 @@ export class AppComponent implements OnInit {
 
 
   cargarDatosTemp(ciudad: string, pais: string, namePais: string) {
-    let url = "http://api.openweathermap.org/data/2.5/forecast?q=" + ciudad + "," + pais + "&appid=b77d320d5d88b90c1fe8fbb3c8f51e2d&units=metric&lang=es";
+    let url = "https://api.openweathermap.org/data/2.5/forecast?q=" + ciudad + "," + pais + "&appid=b77d320d5d88b90c1fe8fbb3c8f51e2d&units=metric&lang=es";
     this.http.get(url).toPromise().then(data => {
       let lista = JSON.stringify(data);
       let listaCountry = JSON.parse(lista);
