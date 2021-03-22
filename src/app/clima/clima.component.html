@@ -31,57 +31,66 @@
           </div>
           <div class="row">
             <div class="col-sm-6">
-              <span class="ml-2">
-                <abbr data-title="Temp min">
-              <img
-                src="assets/min.png"
-                alt="gota"
-                class="img"
-              />
-              </abbr>
-              </span>
-              <span class="extraData">{{ hoy.main.temp_min }} °C</span>
-            </div>
-            <div class="col-sm-6">
-              <span class="ml-2">
-                <abbr data-title="Humedad">
-            <img
-                src="assets/gota.png"
-                alt="gota"
-                class="img"
-                style="padding-left: 4%;"
-              />
-            </abbr>
-          </span>
-              <span class="extraData">{{ hoy.main.humidity }} %</span>
+              <div class="row">
+                <div class="col-sm-12">
+                  <span class="ml-2">
+                    <abbr data-title="Temp min">
+                  <img
+                    src="assets/min.png"
+                    alt="gota"
+                    class="img"
+                  />
+                  </abbr>
+                  </span>
+                  <span class="extraData">{{ hoy.main.temp_min }} °C</span>
+                </div>
+                <div class="col-sm-12">
+                  
+                    <span class="ml-2">
+                      <abbr data-title="Temp Max">
+                      <img
+                      src="assets/max.png"
+                      alt="gota"
+                      class="img"
+                    />
+                  </abbr>
+                </span>
+                    <span class="extraData">{{ hoy.main.temp_max }} °C</span>
+               
+              </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-sm-6" >
-              <span class="ml-2">
-                <abbr data-title="Temp Max">
+            <div class="col-sm-6">
+              <div class="row">
+                <div class="col-sm-12">
+                <span class="ml-2">
+                  <abbr data-title="Humedad">
+              <img
+                  src="assets/gota.png"
+                  alt="gota"
+                  class="img"
+                  style="padding-left: 4%;"
+                />
+              </abbr>
+            </span>
+                <span class="extraData">{{ hoy.main.humidity }} %</span>
+                  </div>
+                </div>
+              <div class="col-sm-12" style="padding-left: 3%;">
+                <span class="ml-2">
+                  <abbr data-title="Viento">
                 <img
-                src="assets/max.png"
-                alt="gota"
-                class="img"
+                src="assets/wind.png"
+                alt="wind"
+                style="height: 35px; margin-right: 5%; margin-bottom: 3%;"
               />
             </abbr>
           </span>
-              <span class="extraData">{{ hoy.main.temp_max }} °C</span>
-              
-            </div>
-            <div class="col-sm-6" style="padding-left: 3%;">
-              <span class="ml-2">
-                <abbr data-title="Viento">
-              <img
-              src="assets/wind.png"
-              alt="wind"
-              style="height: 35px; margin-right: 5%; margin-bottom: 3%;"
-            />
-          </abbr>
-        </span>
-            <span class="extraData">{{ hoy.wind }} m/s</span>
-            </div>
+              <span class="extraData">{{ hoy.wind }} m/s</span>
+              </div>
+              </div>
+            
+
           </div>
         </div>
         <div class="card-body p-0">
