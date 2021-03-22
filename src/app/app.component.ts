@@ -289,13 +289,15 @@ export class AppComponent implements OnInit {
     let a = ini.split("-");
     let mes = parseInt(a[1]) - 1;
     let dates = new Date(parseInt(a[0]), mes, parseInt(a[2]));
+    console.log(dates);
     dates.setHours(0,0,0);
     return dates;
   }
 
   fechaName(ini: string) {
     let a = ini.split("-");
-    let fecha = a[0] + " de " + this.mesName(parseInt(a[1])) + " del " + a[2];
+    let fecha = a[2] + " de " + this.mesName(parseInt(a[1])) + " del " + a[0];
+    console.log(fecha);
     return fecha;
   }
 
